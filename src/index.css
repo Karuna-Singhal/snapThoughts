@@ -45,7 +45,8 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin-right: 1rem;
+  margin: 1.5rem;
+  font-size: 2rem;
 }
 
 nav a,
@@ -60,7 +61,7 @@ nav a:focus {
 }
 
 main {
-  max-width: 500px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -77,6 +78,7 @@ article {
 
 h1 {
   font-size: 3.5rem;
+  margin-left: 1rem;
 }
 
 h2 {
