@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { selectPostById } from "./postSlice";
 import PostAuthour from "./postAuthor";
-import TimeAgo from "./TimeAgo";
+import TimeAgo from "./timeAgo";
 import AddReactionButton from "./addReactionButton";
 import { useParams, Link } from "react-router-dom";
 
