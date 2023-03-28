@@ -6,32 +6,93 @@
 
 html {
   font-family: "Sono", sans-serif;
-  background-color: white;
-  color: #000;
 }
 
 body {
   min-height: 100vh;
   font-size: 1.5rem;
+  font-family: "Sono", sans-serif;
+  background-color: #292524;
+  color: #fafaf9;
 }
 
 input,
 textarea,
 button,
 select {
-  font: inherit;
-  margin-bottom: 1em;
+  background-color: #78716c;
+  border: none;
+  border-radius: 1rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+form button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
+}
+
+label {
+  margin-bottom: 0.6rem;
 }
 
 header {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  background-color: purple;
+  align-items: center;
   color: whitesmoke;
   position: sticky;
   top: 0;
+  background-color: #292524;
+}
+
+ul li a {
+  margin-bottom: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(59, 130, 246);
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+  font-size: 1.24rem;
+}
+
+ul li a:hover,
+ul li a:active {
+  border-bottom: 2px solid whitesmoke;
+}
+
+ul li:nth-child(2n) a {
+  color: rgb(22, 163, 74);
+}
+
+ul li:nth-child(3n) a {
+  color: rgb(239, 68, 68);
+}
+
+ul li:nth-child(4n) a {
+  color: rgb(234, 179, 8);
+}
+
+ul li:nth-child(5n) a {
+  color: rgb(219, 39, 119);
+}
+
+ul li:nth-child(6n) a {
+  color: rgb(20, 184, 166);
+}
+
+ul li:nth-child(7n) a {
+  color: rgb(249, 115, 22);
+}
+
+ul li:nth-child(8n) a {
+  color: rgb(139, 92, 246);
 }
 
 nav {
@@ -41,18 +102,30 @@ nav {
 
 nav ul {
   list-style-type: none;
+  display: flex;
+  gap: 1rem;
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 1.5rem;
-  font-size: 2rem;
+  padding: 1.1rem 1.4rem 0.8rem;
+  font-size: 1.2rem;
+  background-image: linear-gradient(135deg, #3b82f6, #ef4444, #16a34a, #eab308);
+  border-radius: 10rem;
+  font-family: Coiny, sans-serif;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+nav ul li:hover {
+  transform: scale(110%) rotate(-2deg);
 }
 
 nav a,
 nav a:visited {
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
+  margin-bottom: 0 !important;
+  border-bottom: none !important;
 }
 
 nav a:hover,
@@ -61,8 +134,8 @@ nav a:focus {
 }
 
 main {
-  max-width: 1000px;
   margin: auto;
+  padding: 0 2rem;
 }
 
 section {
@@ -70,10 +143,12 @@ section {
 }
 
 article {
-  margin: 0.5em;
-  border: 1px solid #000;
-  border-radius: 10px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
   padding: 1em;
+  background-color: #44403c;
+  border-radius: 1em;
 }
 
 h1 {
@@ -83,10 +158,11 @@ h1 {
 
 h2 {
   margin-bottom: 1rem;
+  letter-spacing: -1px;
+  font-size: 2rem;
 }
 
 p {
-  font-family: "Coiny", sans-serif;
   line-height: 1.4;
   font-size: 1.2rem;
   margin: 0.5em 0;
@@ -105,27 +181,33 @@ textarea {
   font-size: 1rem;
 }
 
-.postCredit a,
+.postCredit a:link,
 .postCredit a:visited {
   margin-right: 0.5rem;
-  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 400;
+  color: #3b82f6;
+  font-weight: 600;
 }
 
 .postCredit a:hover,
 .postCredit a:focus {
-  color: hsla(0, 0%, 0%, 0.75);
-}
-
-.excerpt {
-  font-style: italic;
+  color: #a8a29e;
 }
 
 .reactionButton {
-  margin: 0 0.25em 0 0;
-  background: transparent;
+  background-color: #78716c;
   border: none;
-  color: #000;
+  border-radius: 10rem;
+  color: inherit;
+  cursor: pointer;
+  font-family: inherit;
   font-size: 1rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  transition: 0.3s;
+  margin: 1rem 1rem 0 0;
 }
 
 .deleteButton {
