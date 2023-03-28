@@ -19,7 +19,7 @@ const UserPage = () => {
   return (
     <section>
       <h2>{user?.name}</h2>
-      <ol>{postTitles}</ol>
+      <ul>{postTitles}</ul>
     </section>
   );
 };
