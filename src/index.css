@@ -16,6 +16,17 @@ body {
   color: #fafaf9;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1.24rem;
+}
+
+.logo img {
+  width: 4rem;
+  height: 4rem;
+}
+
 input,
 textarea,
 button,
@@ -42,7 +53,7 @@ label {
 }
 
 header {
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,6 +71,7 @@ ul li a {
   border-bottom: 2px solid transparent;
   transition: all 0.3s;
   font-size: 1.24rem;
+  font-weight: 600;
 }
 
 ul li a:hover,
@@ -126,6 +138,7 @@ nav a:visited {
   text-decoration: none;
   margin-bottom: 0 !important;
   border-bottom: none !important;
+  font-weight: 400 !important;
 }
 
 nav a:hover,
@@ -213,4 +226,22 @@ textarea {
 .deleteButton {
   background-color: palevioletred;
   color: white;
+}
+
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #44403c;
+  border-radius: 10rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #78716c;
+  border-radius: 10rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
 }
