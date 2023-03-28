@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Sono", sans-serif;
   background-color: white;
   color: #000;
 }
@@ -86,7 +86,7 @@ h2 {
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Coiny", sans-serif;
   line-height: 1.4;
   font-size: 1.2rem;
   margin: 0.5em 0;
